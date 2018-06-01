@@ -4,7 +4,17 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "react-native-schemes-manager all"
+  },
+  "xcodeSchemes": {
+    "Debug": [
+      "Staging Debug"
+    ],
+    "Release": [
+      "Staging Release"
+    ],
+    "projectDirectory": "iOS"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -32,6 +42,7 @@
     "eslint-plugin-flowtype": "^2.48.0",
     "eslint-plugin-react": "^7.8.2",
     "jest": "23.1.0",
+    "react-native-schemes-manager": "^1.0.4",
     "react-test-renderer": "16.3.1"
   },
   "jest": {

@@ -18,11 +18,7 @@ class Landing extends Component {
   render() {
     return (
       <View style={{ flex: 1 }}>
-        <Text>
-          {' '}
-          Landing jdfdjk fgdjkgkjdfgkdjfgjkdfgjdkfghjfdgjfdghjfdgjgbfhdjg fdhjg
-          fhjdg hfjdg fdhjg dfhjg jdfhbg {Config.ENVIRONMENT}
-        </Text>
+        <Text> {Config.ENVIRONMENT}</Text>
       </View>
     );
   }
